@@ -1,65 +1,127 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background: #111;
-    color: #eee;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #222;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    color: #bbb;
-    font-size: 1.2em;
-}
-
-section {
-    padding: 20px;
-    border-bottom: 1px solid #333;
-}
-
-h2 {
-    color: #7cfc00;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-li::before {
-    content: "✔ ";
-    color: #7cfc00;
-}
-
-.project {
-    margin-bottom: 15px;
-    padding: 10px;
-    background: #1a1a1a;
-    border-left: 4px solid #7cfc00;
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0b0b0b;
+    color: #33ff33;
+    line-height: 1.7;
+    padding-bottom: 100px;
 }
 
 a {
-    color: #7cfc00;
+    color: #33ff33;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-shadow: 0 0 5px #33ff33;
 }
 
+/* Header */
+header {
+    background-color: #121212;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #1f1f1f;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+header p {
+    color: #33ff33;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #1a1a1a;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #00ff88;
+    text-shadow: 0 0 5px #00ff88;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li::before {
+    content: "▸ ";
+    color: #33ff33;
+    margin-right: 5px;
+}
+
+.project,
+.job,
+blockquote {
+    background-color: #111;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-left: 4px solid #00ff88;
+    box-shadow: 0 0 8px rgba(0, 255, 136, 0.1);
+}
+
+.project h3,
+.job h3 {
+    color: #66ff66;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 0.9em;
+    color: #999;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Blockquote */
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #33ff33;
+    background: #0e0e0e;
+    color: #aaffaa;
+}
+
+/* Contact Info */
+#contact p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background: #222;
-    color: #888;
+    padding: 20px;
+    background-color: #121212;
+    color: #444;
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+}
+
+/* Scrollbar styling (optional) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #33ff33;
+    border-radius: 4px;
 }
